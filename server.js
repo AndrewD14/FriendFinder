@@ -12,7 +12,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 //api routes for the express server to use
-
+require("./app/apiRoutes/htmlRoutes.js")(app);
 
 //starts the listener
 app.listen(PORT);
